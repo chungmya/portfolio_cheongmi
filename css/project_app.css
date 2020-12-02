@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/*-----------------mobile-----------------*/
+/* 초기설정 */
+html {margin: 0; padding: 0; height: 100%;}
+body {font-family: 'S-Core_Dream', 'Noto Sans KR', '맑은 고딕','helvetica','Apple SD Gothic Neo', sans-serif; word-break: keep-all; color: #000; margin: 0; text-transform: capitalize; line-height: 1.6;}
+ul, li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+h2{font-size: 1.6em; line-height: 1.6; letter-spacing: -0.5px; margin: 0;}
+
+#container {background-image: url(../images/paper_bg.jpg); background-repeat: no-repeat; background-size: cover; background-color: rgba(255, 243, 197, 0.742); background-blend-mode: overlay; overflow: hidden; height: 100vh;}
+
+/* header */
+header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 9vh;}
+header {display: flex; justify-content: space-between; align-items: center; border-bottom: 2px #000 solid; background-color: #fff;}
+header h1 { width: 55px; background: url(../images/logo.svg) no-repeat 50% 50%; background-size: contain; text-indent: -9999px; margin: 10px 25px;}
+header h1 a {display: block;}
+
+/*-----웹 gnb 숨기기-----*/
+header nav {display: none;}
+
+header .togglebtn a  {display: block; width: 28px; height: 51px; line-height: 51px; padding: 15px 28px 3px 28px}
+header .togglebtn img {width: 28px;}
+
+/* .togglemenu */
+header .togglemenu {margin-right: -280px;}
+header .togglemenu {float:right; background-color: #fff; width: 280px; height: 100vh; position: absolute; top: 0; right: 0; text-transform: none;}
+header .togglemenu .closebtn {position: absolute; top: 2%; right: 8%; padding: 5px;}
+header .togglemenu .closebtn img {width: 28px;}
+header .togglemenu .toggle_section {margin: 250px 0 0 40px;}
+header .togglemenu .toggle_section li {font-family: 'Lexend Peta'; font-weight: bold; font-size: 2.1em; line-height: 2; margin-bottom: 15px;}
+header .togglemenu .toggle_section li:hover {color: #dd000a;}
+header .togglemenu .produce {margin: 120px 0 0 40px; font-size: 0.8em; font-weight: bold;}
+header .togglemenu .produce li {line-height: 2.5;}
+
+/* display none */
+.web, .preview, .background, .research, .uxui, .solution, .persona, .uxflow, .wireframe, .concept, .process, .link-section, .link-2, .preview-2, #topbtn {display: none;}
+
+/* #contents */
+#contents { margin: 9vh 4%; margin-bottom: 4%; border: 2px solid #000; position: relative; background-color: #fff; }
+
+/* mobile alert */
+/* .project-head mobile */
+.mobile {padding: 6%; margin: 0 auto; margin-bottom: 20px; text-align: center;}
+.mobile h2 {padding-top: 12%;}
+.mobile h2 strong {color: #dd000a;}
+.mobile .link {margin-top: 60px;}
+
+.mobile .link a {display: block; border: 2px solid #dd000a; border-radius: 100px; line-height: 47px;}
+.mobile .link a {margin: 0 auto; margin-top: 15px; width: 220px; height: 47px; color: #dd000a; font-weight: bold;}
+.mobile .link a:hover {background-color: #dd000a; color: #fff;}
+
+
+
+
+
+/*-------------------web------------------*/
+@media (min-width:1400px){
+
+body {font-size: 1.125em;}
+#container {height: auto;}
+h2 {font-family: 'Lexend Peta'; font-size: 3.8em;  margin: 0; line-height: 1.2;}
+h3 {font-family: 'Lexend Peta'; font-size: 2em; margin-top: 10%;}
+h4 {font-family: 'Lexend Peta'; font-size: 1.125em; color: #039492; margin-bottom: 0;}
+/* h4::after {content: ""; border: 2px #039492 solid;} */
+
+/* header */
+header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 9.8vh;}
+header {display: flex; justify-content: space-around; align-items: center; border-bottom: 3px #000 solid;}
+header h1 { width: 120px; margin: 10px 0;}
+header h1 { background: url(../images/logo.svg) no-repeat 50% 50%; background-size: 68%; text-indent: -9999px; margin: 10px 25px;}
+
+/* header .togglebtn */
+header .togglebtn {display: none;}
+/* header nav */
+header nav {display : block;}
+header nav .gnb {display: flex; justify-content: space-around;width: 50vw; }
+header nav .gnb li {font-family:'Lexend Peta'; font-size: 1.3em; font-weight: bold;}
+header nav .gnb li:hover {color: #dd000a;}
+header nav .gnb li:active {color: #dd000a;}
+
+/* display block */
+.web, .preview, .background, .research, .uxui, .solution, .persona, .uxflow, .wireframe, .concept, .process,.link-2,.link-section, #topbtn {display: block;}
+.mobile {display: none;}
+
+/* #contents */
+#contents {margin: 9vh 10%; border: 3px solid #000;}
+
+/* .project-head */
+.project-head {margin: 0 auto; margin-bottom: 20px; padding: 10%;}
+.project-head p {font-weight: 600; font-size: 1.4em;}
+
+.project-head ul {margin-top: 8vh;}
+.project-head ul li {line-height: 2; color: #525252; display: flex;}
+.project-head ul li span{width: 110px; font-weight: bold; display: inline-block; }
+
+/*---- 사이트 바로가기-----*/
+.project-head .link {margin-top: 12vh; display: flex; font-weight: bold; line-height: 1em; text-align: center; font-size: 1em;}
+.project-head .link a {color: #dd000a; border: 3px solid #dd000a; border-radius: 100px; padding: 20px; width: 200px; margin-left: 20px;}
+.project-head .link a:first-child {margin-left: 0;}
+.project-head .link a:hover {background-color: #dd000a; color: #fff;}
+    
+
+/* .preview */
+.preview {height: 886px;}
+.preview {border-top: 3px solid #000; border-bottom: 3px solid #000; }
+.preview {background: url(../images/app_mockup_main.png) no-repeat 50% 50%; background-size: cover;}
+.preview div {margin: 103px 0 0 120px; color: #fff; font-family: 'S-Core_Dream';}
+.preview div p {font-size: 2em; font-weight: 300;    margin-bottom: 30px; margin-top: 130px;}
+.preview div h3 {font-family: 'S-Core_Dream'; font-size: 5em; font-weight: bold; margin: 0; margin-top: -40px;}
+.preview div ul{margin-top: 430px;}
+.preview div ul li {font-size: 1em; color: #8c8c8c; font-weight: 300; margin-bottom: 5px;}
+.preview div ul li span {display: inline-block; width: 100px; font-weight: bold;}
+
+/*-- padding 공통 --*/
+.background, .uxui, .solution, .persona, .uxflow, .wireframe, .concept, .process {border-bottom: 3px #000 solid; padding: 0 10%; padding-bottom: 10%;}
+
+/* .background*/
+.background {border-bottom: 3px #000 solid; padding: 0 10%; padding-bottom: 10%;}
+.background .problems {height: 400px; background: url(../images/app_orignal_app.png)no-repeat 50% 50%; background-size: contain; margin-bottom: 90px; position: relative;}
+.background .problems ul li {background-color: #fff; border: 3px #000 solid; border-radius: 50px; width: 254px; height: 74px; text-align: center; line-height: 74px; font-weight: bold;}
+
+.background .problems ul li:nth-child(1){position: absolute; top: 90px; left: 180px;}
+.background .problems ul li:nth-child(2){position: absolute; top: 150px; right: 190px;}
+.background .problems ul li:nth-child(3){position: absolute; top: 230px; left: 130px;}
+.background .problems ul li:nth-child(4){position: absolute; top: 280px; right: 130px;}
+
+.background .research .research-list { height: 529px; background: url(../images/app_search.png) no-repeat 50% 0; background-size: 70%; position: relative;}
+.background .research .research-list ul {position: absolute; top: 390px; left: 50%; transform: translateX(-50%); display: flex; flex-wrap: wrap; justify-content: center; width: 800px;}
+.background .research .research-list ul li {font-weight: bold; font-size: 1.3em; margin-left: 25px; margin-bottom: 10px;}
+
+/*--- .link ---*/
+.link-2 {height: 6vh; text-align: center; border-bottom: 3px solid #000; font-size: 1em; font-weight: bold; color: #dd000a; line-height: 6vh;}
+.link-2:hover {background-color: #dd000a; color: #fff;}
+
+/* .uxui */
+.uxui > div { margin: 0 auto; top: 13%; position: relative;}
+.uxui div .left {background: url(../images/app_uxui_01.png) no-repeat 50% 50%; background-size: cover; position: absolute; top: 60px; left: 150px; width: 60px; height: 60px; text-indent: -9999px;}
+.uxui div .right {background: url(../images/app_uxui_02.png) no-repeat 50% 50%; background-size: cover; position: absolute; bottom: 30px; right: 100px; width: 60px; height: 60px; text-indent: -9999px;}
+.uxui div p {text-align: center; padding: 10% 0; color: #039492; font-size: 1.760em;}
+
+/* .solution */
+.solution {padding: 0; padding-bottom: 10%;}
+.solution h3 {margin-bottom: 30px; padding-left:10%;}
+.solution p {padding-left:10%;}
+.solution div {display: flex; flex-flow: wrap; padding: 0 5%; position: relative; margin-top: 6vh;}
+.solution ul li {text-align: center; font-size: 16px; font-weight: bold; margin-bottom: 20px; height: 90px; line-height: 90px;}
+
+.solution .list01 li {color: #707070; border: 2px solid #707070; border-radius: 50px; width: 200px; height: 90px;
+line-height: 90px;}
+.solution .arrow li {height: 94px;}
+.solution .list02 {margin-left: 3%;}
+.solution .list02 li {color: #fff; background: #039492; border-radius: 50px; width: 348px; letter-spacing: -1px;}
+.solution .list03 {position: absolute; top: 40%; left: 700px; transform:translateX(-50%)}
+.solution .list04 {position: absolute; top: 24%; left: 720px;}
+.solution .list04 li {color: #fff; background: #039492; border-radius: 50px; width: 348px;}
+
+/* .persona */
+.persona {overflow: hidden;}
+.persona .search {margin: 2% 0;}
+.persona .search div {margin: 6% 0;}
+.persona .search div ul { display: flex; flex-flow: wrap; justify-content: center; margin: 2% 0;}
+.persona .search div ul li {width: 11vw; height: 11vw; border: 2px solid #000; border-radius: 100%; line-height: 11vw; text-align: center; font-weight: bold; margin-left: -20px;}
+
+.persona .persona-list {display: flex; margin-top: 3%; margin-left: -10px;}
+
+/* .uxflow */
+.uxflow {overflow: hidden; height: 550px;}
+.uxflow .flow-list {display: flex; flex-wrap: wrap; text-align: center; position: relative; margin-top: 8%;}
+.uxflow .flow-list > li {color:#707070; border: 3px solid #707070; border-radius: 100%; width: 9vw; height: 9vw; margin-left: 1%; display: inline-block; vertical-align: 9vw; display: flex; align-items: center; justify-content: center;}
+
+.uxflow .sub1 {position: absolute; right: 39%; color: #000; font-weight: bold;} 
+.uxflow .sub2 {position: absolute; right: 20%; color: #000; font-weight: bold;}
+
+/* .wireframe */
+.wireframe  div > ul li {color: #707070; display: flex;}
+.wireframe  div > ul li span {display: inline-block; width: 100px; float: left;}
+.wireframe  div ul li .width {width: 140px}
+
+.wireframe .wire01{ overflow: hidden;}
+.wireframe .wire01 img{float: right;}
+
+.wireframe .wire02 {overflow: hidden;}
+.wireframe .wire02 img {float: left;}
+.wireframe .wire02 div {float: right;}
+
+.wireframe .wire03 {overflow: hidden;}
+.wireframe .wire03 img {float: right;}
+
+
+/* .concept */
+.concept .keyword {font-size: 2em; font-weight: bold; margin-top: 10%;}
+.concept .keyword ul {display: flex; flex-wrap: wrap; justify-content: center;}
+.concept .keyword ul li {width: 20vw; height: 20vw; border: 1px solid #000; border-radius: 100%; line-height: 20vw; text-align: center; margin-left: -2%;}
+.concept .color {float: left; width: 50%; margin-top: 10%; overflow: hidden;}
+.concept .font {float: right; width: 50%; margin-top: 10%;}
+.concept .icon { margin-top: 40%;}
+
+/* tprocess*/
+.process {border-bottom: 3px #000 solid;}
+.process .logo .logoimg {margin-top: 5%;}
+.process .time {margin-top: 10%;}
+.process .time .badge {margin-top: 10%; width: 500px;     text-align: center; }
+.process .badge-list {display: flex; flex-wrap: nowrap; margin-top: 2%;}
+.process .badge-list > li {margin-left: 2%; text-align: center;}
+.process .badge-list > li:first-child {margin-left: 0;}
+.process .badge-list .line {border: 1px solid #000; width: 10vw; height: 10vw;}
+.process .badge-list li:first-child{margin-left: 0;}
+.process .badge-list .listimg01 {background: url(../images/app_badge01.png) no-repeat 50% 50%; background-size: cover;}
+.process .badge-list .listimg02 {background: url(../images/app_badge02.png) no-repeat 50% 50%; background-size: cover;}
+.process .badge-list .listimg03 {background: url(../images/app_badge03.png) no-repeat 50% 50%; background-size: cover;}
+
+/* .link-section */
+.link-section {height: 120px; display: flex; flex-wrap: nowrap; justify-content: space-around; align-items: center; padding: 0 25%;}
+.link-section .link {width: 250px; height: 69px; line-height: 69px; text-align: center; border-radius: 100px; background: #dd000a; color: #fff; font-weight: bold;}
+
+/* .preview-2 */
+.preview-2 {background-image: url(../images/app_thumb.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; background-color: #039492; height: 50vh;}
+.preview-2 {border-top: 3px solid #000; text-indent: -9999px;}
+
+/* #topbtn */
+#topbtn  {width: 50px; height: 50px; border: 2px solid #000; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); float: right; position: fixed; right: 3%; bottom: 15%;}
+#topbtn {background-image: url(../images/top_btn.svg); background-repeat: no-repeat; background-position: 50% 50%;background-size: 90%; background-color: #fff; text-indent: -99999px;}
+
+}/*-----/web media------*/

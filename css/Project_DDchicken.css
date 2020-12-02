@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/*------------mobile------------*/
+/* 초기설정 */
+body {font-family: 'S-Core_Dream', 'Noto Sans KR', '맑은 고딕','helvetica','Apple SD Gothic Neo', sans-serif; word-break: keep-all; color: #000; margin: 0; text-transform: capitalize; line-height: 1.6;}
+ul, li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit;}
+
+h1{margin: 0; padding: 0;}
+h2{font-family: 'Lexend Peta'; font-size: 1.8em;  margin: 0;}
+h3{font-family: 'Lexend Peta'; font-size: 1.45em; margin-top: 20%;}
+h4{font-family: 'Lexend Peta'; font-size: 0.9em; letter-spacing: -1px; color: #dd000a; margin-bottom: 0; margin-top: 17%;}
+
+#container {background-image: url(../images/paper_bg.jpg); background-repeat: no-repeat; background-size: cover; background-color: rgba(255, 243, 197, 0.742); background-blend-mode: overlay; }
+
+/* header */
+header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 9vh;}
+header {display: flex; justify-content: space-between; align-items: center; border-bottom: 2px #000 solid; background-color: #fff;}
+header h1 { width: 55px; background: url(../images/logo.svg) no-repeat 50% 50%; background-size: contain; text-indent: -9999px; margin: 10px 25px;}
+header h1 a {display: block;}
+
+/*-----웹 gnb 숨기기-----*/
+header nav {display: none;}
+
+header .togglebtn a  {display: block; width: 28px; height: 51px; line-height: 51px; padding: 15px 28px 3px 28px}
+header .togglebtn img {width: 28px;}
+
+/* .togglemenu */
+header .togglemenu {margin-right: -100%;}
+header .togglemenu {float:right; background-color: #fff; width: 100%; height: 100vh; position: absolute; top: 0; right: 0; text-transform: none;}
+header .togglemenu .closebtn {position: absolute; top: 2%; right: 8%; padding: 5px;}
+header .togglemenu .closebtn img {width: 28px;}
+header .togglemenu .toggle_section {margin: 250px 0 0 40px;}
+header .togglemenu .toggle_section li {font-family: 'Lexend Peta'; font-weight: bold; font-size: 2.1em; line-height: 2; margin-bottom: 15px;}
+header .togglemenu .toggle_section li:hover {color: #dd000a;}
+header .togglemenu .produce {margin: 120px 0 0 40px; font-size: 0.8em; font-weight: bold;}
+header .togglemenu .produce li {line-height: 2.5;}
+
+
+
+/* #contents */
+#contents {margin: 9vh 4%; border: 2px solid #000; position: relative; background-color: #fff; }
+/* #contents {display: grid; grid-template-rows: repeat(43vh, 7);} */
+
+/* .project head */
+.project {padding: 6%; margin: 0 auto; margin-bottom: 20px;}
+.project h2 {line-height: 1.4; letter-spacing: -1px;}
+.project p {font-weight: 600; font-size: 0.9em;}
+
+.project ul {margin-top: 4vh;}
+.project ul li {color: #525252; line-height: 2; font-size: 0.9em; font-weight: 500;}
+.project ul li span{ display: inline-block; width: 27vw; font-family: 'Lexend Peta'; letter-spacing: -2px;}
+
+.project .link {font-family: 'Lexend Peta'; font-size: 0.9em; line-height: 0.8em; margin-top: 6vh;}
+.project .link a {display: block; line-height: 4vh; padding: 0 10px; text-indent: 6px;}
+.project > .link a {border: 2px solid #dd000a; width: 134px; height: 4vh; padding: 0 8px; border-radius: 35px;}
+
+.link a:hover {color:#fff; background: #dd000a; }
+
+/* .preview */
+.preview { height: 40vh; text-indent: -9999px;}
+.preview {border-top: 2px solid #000; border-bottom: 2px solid #000; }
+.preview {background: url(../images/tumbnail_03.png) no-repeat 50% 50%; background-size: contain;}
+
+/* .goal */
+.goal {border-bottom: 2px #000 solid; margin: 0 auto;}
+.goal h3 {padding: 0 6%;}
+.goal p {font-size: 0.9em; font-weight: 500; line-height: 1.8; padding: 0 6%;}
+
+/*--- .problems, .solution ---*/
+.goal .problems, .goal .solution {margin-bottom: 10%;}
+.goal .problems h4, .goal .solution h4 {padding: 0 6%;}
+.goal .problems ul, .goal .solution ul {display: flex; flex-wrap: wrap; justify-content: center; width:100%; font-size: 0.9em; margin: 10% 0;}
+.goal .problems ul li, .goal .solution ul li {width: 39vw; height: 39vw; padding: 8px; margin-left: -4vw; margin-top: -3vw; border: 1px dotted #000; border-radius: 100%;}
+
+.goal .problems ul li div span, .goal .solution ul li div span  {display: block; font-weight: bold;}
+
+.goal .problems ul li:nth-child(odd), .goal .solution ul li:nth-child(odd) {margin-left: 0;}
+.goal .problems ul li:nth-child(even), .goal .solution ul li:nth-child(even) {margin-right: 0;}
+.goal .problems ul li div, .goal .solution ul li div {text-align: center; width: 35vw; height: 42vw; margin-left: 2vw; display: flex;flex-direction: column; justify-content: center;}
+
+.goal .solution h4 {margin-top: 5%;}
+.goal .solution {margin-bottom: 20%;}
+.goal .solution ul li {background-color: #eeeeee; border: none;}
+
+/* .goal .arrow_down */
+.goal .arrow_down {height: 7vh; background: url(../images/arrow_down.png) no-repeat 50% 50%; background-size: contain; text-indent: -9999px;}
+
+/* .concept */
+.concept {border-bottom: 2px solid #000; padding: 3%; padding-bottom: 15%;}
+.concept ul > li {font-size: 0.9em; text-transform: none; margin-bottom: 5%;}
+
+/* .concept .color */
+.concept {padding: 6%; padding-bottom: 20%; overflow: hidden;}
+.concept h3 {letter-spacing: -2px;}
+.concept h4 {width: 20%; margin: 0; float: left;}
+.concept .color {width: 100%; height: 17vh; margin-bottom: 3vh; margin-top: 12%;}
+.concept .subtitle {width: 80%; float: right; top: 0;}
+
+.concept .color .colorcode {display: flex; flex-flow: wrap; float: left; margin-left: 20%;}
+/* .concept .color .colorcode:last-child {margin-bottom: 20%;} */
+
+.concept .color .colorcode li {width: 15vw; height: 15vw; border-radius: 100%; background-color:  #dd000a; text-align: center; font-size: 0.8em; line-height: 15vw; color: #fff; font-weight: bold; padding: 8px; margin: 15px 5px 0 0;}
+.concept .color .colorcode li:nth-child(1){background-color: #fff; background-color: #e41e26;}
+.concept .color .colorcode li:nth-child(2) {background-color: #f05922;}
+.concept .color .colorcode li:nth-child(3) {background-color: #f99d1c;}
+
+
+/* .concept .font */
+.concept .font {width: 100%; height: 17vh; margin-bottom: 3vh; margin-top: 34%;}
+.concept .font .fontname {margin-left: 20%;}
+.concept .font .fontname li {margin: 10px 15px 0 0; float: left; font-size: 1.2em; }
+.concept .font .fontname li:first-child {font-family: 'Noto Sans KR'; font-weight: bold;}
+.concept .font .fontname li:last-child {font-family: 'Barlow'; font-weight: bold;}
+
+/* .uxui */
+.uxui {border-bottom: 2px solid #000; padding: 6%;}
+.uxui h3 {letter-spacing: -2px; margin-bottom: 20%;}
+.uxui ul {margin-bottom: 20%;}
+.uxui ul li {font-size: 0.9em; line-height: 1.6; margin-bottom: 10%;}
+.uxui ul li span {display: block; font-weight: bold; color:  #dd000a; margin: 2% 0;}
+
+
+/* .publishing */
+.publishing {padding: 6%; margin-bottom: 20%;}
+.publishing ul {font-size: 0.9em; padding-left: 5%; text-transform: none;}
+.publishing ul li {margin-bottom: 15px; width: 90%; list-style: outside; }
+
+/* #topbtn */
+#topbtn {width: 50px; height: 50px; float: right; position: absolute; bottom: 20px; right: 20px; background: url(../images/top_btn.svg) no-repeat 50% 50%; background-size: 90%; text-indent: -99999px;}
+#topbtn  {background-color: #fff; border: 1px solid #000; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); float: right; position: fixed; right: 10%; bottom: 15%;}
+#topbtn a {display: block;}
+
+
+
+
+/*------------pc------------*/
+@media (min-width:1400px) {
+body {font-size: 1.125em;}
+h2 {font-size: 3.8em; margin: 0; margin-bottom: 6%;}
+h3 {font-size: 2em; margin-top: 10%;}
+h4 {font-size: 1.125em; color: #dd000a; margin-bottom: 0;}
+
+/* header */
+header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 9.8vh;}
+header {display: flex; justify-content: space-around; align-items: center; border-bottom: 3px #000 solid;}
+header h1 { width: 120px; margin: 10px 0;}
+header h1 { background: url(../images/logo.svg) no-repeat 50% 50%; background-size: 68%; text-indent: -9999px; margin: 10px 25px;}
+
+/* header .togglebtn */
+header .togglebtn {display: none;}
+/* header nav */
+header nav {display : block;}
+header nav .gnb {display: flex; justify-content: space-around;width: 50vw; }
+header nav .gnb li {font-family:'Lexend Peta'; font-size: 1.3em; font-weight: bold;}
+header nav .gnb li:hover {color: #dd000a;}
+header nav .gnb li:active {color: #dd000a;}
+
+/* #contents */
+#contents {margin: 9vh 10%; border: 3px solid #000; max-width: 80%; margin: 0 auto;}
+
+/* .project head */
+.project {margin: 0 auto; margin-bottom: 20px; padding: 10%;}
+.project p {font-weight: 600; font-size: 1.4em;}
+
+.project ul {margin-top: 8vh;}
+.project ul li {font-size: 18px; line-height: 2; color: #525252;}
+.project ul li span{width: 125px;}
+
+/*---- 사이트 바로가기-----*/
+.project > .link {margin-top: 12vh; display: flex; font-weight: bold; line-height: 1em; text-align: center; font-size: 1em;}
+.project > .link a {color: #dd000a; border: 3px solid #dd000a; border-radius: 100px; padding: 10px; width: 220px; margin-left: 20px;}
+.project > .link a:first-child {margin-left: 0;}
+.project > .link a:hover {background-color: #dd000a; color: #fff;}
+
+/* .project .link {margin-top: 12vh;}
+.project .link a {line-height: 4vh; padding: 0 10px; text-indent: 6px; font-size: 1.8em;}
+.project > .link a {display: block; width: 250px; padding: 10px; border: none; position: relative; z-index: 500; } 
+.link a:before {content:""; position:absolute; display:block; top: 1px; left:0; width: 55px; height: 55px; background-color: #dd000a; border-radius:100px; transition:all 0.5s cubic-bezier(.05,.68,.83,.67); z-index:-1;} 
+.link a:hover{transition:all 0.5s cubic-bezier(.05,.68,.83,.67);} */
+
+/* .preview */
+.preview { height: 90vh;}
+.preview {border-top: 3px solid #000; border-bottom: 3px solid #000; }
+.preview {background: url(../images/tumbnail_03.png) no-repeat 50% 50%; background-size: contain;}
+
+/* .goal */
+.goal {border-bottom: 3px #000 solid; padding: 0 10%}
+.goal h3 {padding: 0;}
+.goal p {font-weight: 500; padding: 0;}
+
+/*--- .problems, .solution ---*/
+.goal .problems, .goal .solution {margin-bottom: 10%;}
+.goal .problems h4, .goal .solution h4 {padding: 0%;}
+.goal .problems ul, .goal .solution ul {display: flex; flex-wrap: wrap; justify-content: center; width:100%; margin: 10% 0; font-size: 1.2em;}
+.goal .problems ul li, .goal .solution ul li {width: 28vw; height: 28vw; padding: 8px; margin-left: -4vw; margin-top: -3vw; border: 2px dotted #000; border-radius: 100%;}
+
+.goal .problems ul li div span, .goal .solution ul li div span  {display: block; font-weight: bold;}
+.goal .problems ul li div, .goal .solution ul li div {height: 28vw; width: 23vw; margin-left: 3vw;}
+
+.goal .solution h4 {margin-top: 5%;}
+.goal .solution {margin-bottom: 20%;}
+.goal .solution ul li {background-color: #eeeeee; border: none;}
+
+/* .concept */
+.concept {border-bottom: 3px #000 solid; padding: 0 10%; padding-bottom: 20%;}
+/* .concept .color */
+.concept .subtitle {width: 80%; float: right; top: 0;}
+.concept .color {margin-top: 15%;}
+/* .concept .color .colorcode {margin-top: 5%; margin-left: 0;} */
+.concept .color .colorcode li {font-size: 1.2em; width: 11vw; height: 11vw; line-height: 11vw;}
+
+/* .concept .font */
+.concept .font {margin-top: 20%;}
+.concept .font .fontname li {margin: 10px 70px 0 0; float: left; font-size: 1.2em;}
+
+/* .uxui */
+.uxui {padding: 0 10%; border-bottom: 3px solid #000;}
+.uxui h3, .publishing h3 {letter-spacing: -2px; margin-bottom: 10%;}
+
+.uxui ul li {margin-bottom: 5%;}
+.uxui ul li span {display: block; font-weight: bold; color: #dd000a; margin: 0; }
+
+/* .publishing */
+.publishing {padding: 0 10%;}
+.publishing ul li {margin-bottom: 2%; width: 98%;}
+
+/* #topbtn */
+#topbtn  {width: 50px; height: 50px; border: 2px solid #000; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); float: right; position: fixed; right: 3%; bottom: 15%;}
+#topbtn {background-image: url(../images/top_btn.svg); background-repeat: no-repeat; background-position: 50% 50%;background-size: 90%; background-color: #fff; text-indent: -99999px;}
+
+};/*----/pc----*/

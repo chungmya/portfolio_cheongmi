@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+body {font-family: 'S-Core_Dream', 'Noto Sans KR', '맑은 고딕','helvetica','Apple SD Gothic Neo', sans-serif; word-break: keep-all; text-transform: capitalize; font-size: 1em; line-height: 1.6; letter-spacing: -0.5px; margin: 0; padding: 0;}
+body {background-image: url(../images/paper_bg.jpg); background-repeat: no-repeat; background-size: cover; background-color: rgba(255, 243, 197, 0.742); background-blend-mode: overlay; }
+
+ul, li { margin: 0; padding: 0; list-style: none; }
+a { text-decoration: none; color: inherit; }
+a:hover { text-decoration: underline; }
+p { margin-top: 0; word-break: keep-all; line-height: 1.8;}
+
+h1 { font-family: 'Lexend Peta'; font-weight: bold; font-size: 70px; margin: 0; }
+h2 { font-family: 'Lexend Peta'; font-weight: 100; font-size: 3vw; margin: 0; }
+h4 { font-family: 'Lexend Peta'; font-weight: 300; font-size: 35px; letter-spacing: -2px; line-height: 1.3; margin: 0; height: 176px;}
+.h5 { display: none;}
+h3 { font-family: 'Lexend Peta'; font-weight: bold; font-size: 20px; line-height: 1.3; margin: 0;  margin-bottom: 12px;}
+h6 { font-family: 'Lexend Peta'; font-weight: bold; font-size: 15px; line-height: 1.5; color: #a3a3a3; margin: 0; margin-bottom: 28px;}
+
+footer { font-family: 'Lexend Peta'; font-weight: bold; font-size: 4vw; color: #a3a3a3; }
+
+/* container */
+.container {margin: 0 auto; margin: 11px; display: flex; flex-direction: column; overflow: hidden;}
+
+.container section img { vertical-align: top;}
+footer { font-family: 'Gotham'; font-weight: bold; font-size: 4vw; color: #a3a3a3; }
+
+/* header */
+header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 9vh;}
+header {display: flex; justify-content: space-between; align-items: center; border-bottom: 2px #000 solid; background-color: #fff;}
+header h1 { width: 55px; background: url(../images/logo.svg) no-repeat 50% 50%; background-size: contain; text-indent: -9999px; margin: 10px 25px;}
+header h1 a {display: block;}
+
+/*-----웹 gnb 숨기기-----*/
+header nav {display: none;}
+
+header .togglebtn a  {display: block; width: 28px; height: 51px; line-height: 51px; padding: 15px 28px 3px 28px}
+header .togglebtn img {width: 28px;}
+
+/* .togglemenu */
+header .togglemenu {margin-right: -100%;}
+header .togglemenu {float:right; background-color: #fff; width: 100%; height: 100vh; position: absolute; top: 0; right: 0; text-transform: none;}
+header .togglemenu .closebtn {position: absolute; top: 2%; right: 8%; padding: 5px;}
+header .togglemenu .closebtn img {width: 28px;}
+header .togglemenu .toggle_section {margin: 250px 0 0 40px;}
+header .togglemenu .toggle_section li {font-family: 'Lexend Peta'; font-weight: bold; font-size: 2.1em; line-height: 2; margin-bottom: 15px;}
+header .togglemenu .toggle_section li:hover {color: #dd000a;}
+header .togglemenu .produce {margin: 120px 0 0 40px; font-size: 0.8em; font-weight: bold;}
+header .togglemenu .produce li {line-height: 2.5;}
+
+/* .hometitle */
+.container .hometitle {border: none; margin-top: 75px; height: 10vh; padding: 0 4%; line-height: 10vh; }
+.container .hometitle h2 {font-size: 2em;}
+.container .hometitle h2.on::after {content: "_"; margin-left: 8px;}
+
+/* contents section */
+.container .contents {background-color: #fff;}
+.container .contents section {padding: 6%; border: 2px solid #000; border-bottom:none;position: relative;} 
+/* contents section work 섹션에 마진 값 */
+.container .contents section div:last-child{margin-top: 60px;}
+
+
+/* contents section profile */
+.container .contents .profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container .contents .profile .pic {
+    background: url(../images/profile02.png) no-repeat 20% 50%;
+    background-size: cover;
+    height: 353px;
+}
+.container .contents .pictxt {margin-top: 0 !important;}
+.container .contents .pictxt p:first-child {font-size: 1em;}
+.container .contents .pictxt p {margin-left: 14px;line-height: 1.4; font-size: 1.3em;}
+.container .contents .profilesub{
+    display: none;
+}
+.container .contents .profile p:nth-of-type(1) {
+    font-family: 'gotham'; font-weight: 300;
+    color: #a3a3a3;
+}
+/* contents section sub */
+.container .contents .sub { height: 795px;}
+.container .contents .sub p {margin-bottom: 15%;}
+.container .contents .sub p span {font-weight: bold;
+display: inline-block; margin-bottom: 3%;}
+/* contents section work2 */
+.container .contents .work {
+    height: 705px;
+}
+.container .contents .work2 li {
+    list-style-type: disc;
+    margin-left: 23px;
+}
+.container .contents .work3 {
+    display: none;
+}
+/* contents section experience */
+.container .contents .experience {
+    height: 892px;
+}
+/* contents section award */
+.container .contents .award{
+    height: 355px;
+}
+/* contents section education */
+.container .contents .education{
+    height: 355px;
+}
+/* contents section skill */
+
+.container .contents #skill {
+    display: table-cell;
+    vertical-align: bottom;
+}
+.container .contents .skilltxt {
+    height: 616px;
+}
+.container .contents .design {
+    background: url(../images/mobile_tools01.png) no-repeat 50% 50%;
+    height: 140vw;
+    background-size: 70%;
+}
+.container .contents .proto {
+    background: url(../images/mobile_tools02.png) no-repeat 50% 50%;
+    height: 70vw;
+    background-size: 70%;
+}
+.container .contents .coding {
+    background: url(../images/mobile_tools03.png) no-repeat 50% 50%;
+    height: 140vw;
+    background-size: 70%;
+}
+.container .contents .community {
+    background: url(../images/mobile_tools04.png) no-repeat 50% 50%;
+    height: 70vw;
+    background-size: 70%;
+}
+.container .contents .tool {
+    display: none;
+}
+/* contents section footer */
+.container footer { text-align: center; border-top: 2px #000 solid; padding: 42.5px 0;}
+
+
+
+
+/*************** PC *****************/
+@media (min-width:1440px) {
+    p { font-size: 22px; margin-top: 0; word-break: keep-all;}
+    h1 { font-family: 'Lexend Peta'; font-weight: bold; font-size: 95px; margin: 0; margin-left: 10px;  }
+    h2 { font-family: 'Lexend Peta'; font-weight: 500; font-size: 22px; margin: 0;  margin-left: 18px; height: 35px; }
+    h4 { font-family: 'Lexend Peta'; font-weight: 300; font-size: 90px; line-height: 1.3; margin: 0; height: 176px; padding-top: 120px; padding-bottom: 30px;} 
+    h3 { font-family: 'Lexend Peta'; font-weight: bold; font-size: 22px; line-height: 1.3; margin: 0;  margin-bottom: 12px;}
+    .h5 { display: block;}
+    h5 {font-size: 45px; font-family: 'Lexend Peta'; font-weight: bold; line-height: 1.3; margin: 0;} 
+    h6 { font-family: 'Lexend Peta'; font-weight: bold; font-size: 15px; line-height: 1.5; color: #a3a3a3; margin: 0;}
+    
+    .container section img { vertical-align: top;}
+    footer { font-family: 'Gotham'; font-weight: bold; font-size: 20px; color: #a3a3a3; }
+
+    /* .container .contents section {opacity: 0;} */
+
+     /* header */
+    header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 9.8vh;}
+    header {display: flex; justify-content: space-around; align-items: center; border-bottom: 3px #000 solid;}
+    header h1 { width: 120px; margin: 10px 0;}
+    header h1 { background: url(images/logo.svg) no-repeat 50% 50%; background-size: 68%; text-indent: -9999px; margin: 10px 25px;}
+
+    /* header .togglebtn */
+    header .togglebtn {display: none;}
+    /* header nav */
+    header nav {display : block;}
+    header nav .gnb {display: flex; justify-content: space-around;width: 50vw; }
+    header nav .gnb li {font-family:'Lexend Peta'; font-size: 1.3em; font-weight: bold;}
+    header nav .gnb li:hover {color: #dd000a;}
+    header nav .gnb li:active {color: #dd000a;}
+
+    /* .hometitle */
+    .container .hometitle {border: none; margin-top: 160px; height: 12vh; padding: 0 4%; line-height: 12vh;}
+    .container .hometitle h2 {font-size: 5em;}
+    .container .hometitle h2.on::after {content: "_"; margin-left: 8px;}
+
+
+    /* contents */
+    .container .contents {border: 3px #000 solid;margin: 4%;}
+    .container .contents { display: grid;grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:959px 480px 1442px 480px 480px 960px; }
+    /* contents section */
+    .container .contents section {
+    border: 3px solid #000; padding: 66px; border-bottom:none; position: relative;}
+    /* contents section profile */
+    .container .contents .profile p:nth-of-type(1) {
+        color: #000;
+    }
+    .container .contents .profile { display: block;
+    grid-column: 1/5; border-top: none;  padding: 0; border: none;}
+    .container .contents .pictxt {
+        overflow: hidden;
+    }
+    .container .contents .pictxt p:nth-of-type(1) {
+        font-size: 18px;
+        font-family: 'Lexend Peta';
+        padding-top: 66px; padding-left: 40px;
+        margin: 0;
+    }
+    .container .contents .pictxt p:nth-of-type(2) {
+        font-size: 45px; font-weight: bold;
+        padding-left: 40px;
+        margin: 0;
+    }
+    .container .contents .profile .pic {
+        background: url(../images/profile01.png)no-repeat 50% 50%;
+        width: 480px; height: 959px;
+        float: left;
+        border-right: 1px solid #000;
+    }
+    .container .contents .profilesub{
+        display: block;
+        overflow: hidden;
+        padding-left: 40px;
+    }
+    .container .contents .profilesub p {
+        width: 30vw;
+    }
+    .container .contents .profilesub p span {
+        font-weight: bold;
+    }
+
+
+    /* .container .contents sub  */
+    .container .contents .sub {
+        display: none;
+    }
+    /* .container .contents .title1 */
+    .container .contents .title1 {grid-column: 1/5;
+    border-left: none; border-right: none;}
+    /* .container .contents .h5 */
+    .container .contents .h5 {
+        border-left: none;
+    }
+
+    /* .container .contents .work */
+    .container .contents h6 {
+        float: left;
+        width: 255px;
+        margin-right: 70px;
+    }
+    .container .contents .work {grid-column: 2/5;
+    border-left: none; border-right: none;}
+    .container .contents .work { grid-column: 2/5;}
+    .container .contents .work #work {
+        height: 190px;
+    }
+    .container .contents .work2 {
+        margin-top: 35px;
+    }
+    .container .contents .work2parttime {
+        margin-top: 30px;
+    }
+    .container .contents .work2parttime p{
+        margin-bottom: 60px;
+    }
+    .container .contents .work3 {
+        display: block;
+        margin-top: 0;
+    }
+    .container .contents .work3h6 {
+        height: 220px;
+    }
+    .container .contents .work3h6txt {
+        height: 210px;
+    }
+    .container .contents .experience, .container .contents .award {
+        display: none;
+    }
+    /* .container .contents .education */
+    .container .contents .education {grid-column: 2/5; border-left: none; border-right: none;}
+    /* .container .contents #skill */
+    .container .contents .skill1 {
+        grid-column: 1/5; 
+        border-bottom: 1px solid #000 ;
+        border-left: none;
+    }
+    .container .contents:last-child .h5 {
+        border-top: none;
+    }
+
+    .container .contents .skilltxt {
+        grid-column: 2/3;
+        border: none;
+        padding-left: 40px;
+    }
+    .container .contents .skill {
+        display: none;
+    }
+    .container .contents .tool {
+        grid-column: 3/5;
+        background: url(../images/web_tools.png)no-repeat 50% 10%;
+        background-size: contain;
+        display: block;
+        border-top: none;
+    }
+
+    /* footer */
+  /* footer */
+  .container footer { font-size: 1.2em; height: 341px; border: 1px #000 solid; border-top: none; text-align: center; text-transform: none; }
+
+
+
+
+}/************ /pc **************/
