@@ -44,6 +44,7 @@
    <link rel="stylesheet" href="stylesheet/font.css">
 
    <!-- 스타일 시트 -->
+   <link rel="stylesheet" href="css/header.css">
    <link rel="stylesheet" href="css/project_app.css">
 
    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
@@ -54,31 +55,34 @@
 <body>
    <div id="container">
        <header>
-         <h1><a href ="index.html">logo</a></h1>
-         <nav>
-             <ul class="gnb">
-                 <li><a href="index.html">Project</a></li>
-                 <li><a href="about.html">About</a></li>
-                 <li><a href="#">Contact</a></li>
-             </ul>
-         </nav>
-         <div class="togglebtn">
-             <a href="#"><img src="images/menu.svg" alt="togglemenu"></a>
-         </div>
-         <div class="togglemenu">
-             <div class="closebtn"><a href="#"><img src="images/button_x.png" alt="close"></a></div>
-             <ul class="toggle_section">
-                 <li><a href="index.html">Project</a></li>
-                 <li><a href="about.html">About</a></li>
-                 <li><a href="#">Contact</a></li>
-             </ul>
-             <ul class="produce">
-                 <li>박청미</li>
-                 <li>Web Publisher</li>
-                 <li>010.4477.4158</li>
-                 <li>bluepark1023@gmail.com</li>
-             </ul>
-         </div><!--/togglemenu-->
+        <h1><a href ="index.html">logo</a></h1>
+        <nav>
+            <ul class="gnb">
+                <li class="gnb_project">
+                    <a href="project.html">Project</a>
+                </li>
+                <li class="contact">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="togglebtn">
+            <a href="#"><img src="images/menu.svg" alt="togglemenu"></a>
+        </div>
+        <div class="togglemenu">
+            <div class="toggle_inner">
+                <div class="closebtn"><a href="#"><img src="images/button_x.png" alt="close"></a></div>
+                <ul class="toggle_section">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project.html">Project</a></li>
+                </ul>
+                <ul class="produce">
+                    <li>박청미 | Web Publisher</li>
+                    <li>010.4477.4158</li>
+                    <li>bluepark1023@gmail.com</li>
+                </ul>
+            </div>
+        </div><!--/togglemenu-->
         </header>
         <div id="contents">
             <div class="project-head web">
