@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* 'Noto Sans KR' */
+@font-face {
+    font-family: 'Noto Sans KR L';
+    src: url('font/NotoSansKR-Light.woff2') format('woff2'),
+        url('font/NotoSansKR-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR B';
+    src: url('font/NotoSansKR-Bold.woff2') format('woff2'),
+        url('font/NotoSansKR-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Noto Sans KR R';
+    src: url('font/NotoSansKR-Regular.woff2') format('woff2'),
+        url('font/NotoSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Noto Sans KR T';
+    src: url('font/NotoSansKR-Thin.woff2') format('woff2'),
+        url('font/NotoSansKR-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 'S-core_Dream' */
+@font-face {
+    font-family: 'S-Core_Dream' ; 
+    src: url('font/S-CoreDream-3Light.woff2') format('woff2'),
+             url('font/S-CoreDream-3Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-Core_Dream' ; 
+    src: url('font/S-CoreDream-4Regular.woff2') format('woff2'),
+    url('font/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-Core Dream';
+    src: url('font/S-CoreDream-5Medium.woff2') format('woff2'),
+        url('font/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'S-Core_Dream' ; 
+    src: url('font/S-CoreDream-6Bold.woff2') format('woff2'),
+    url('font/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+/* Anton sanserif bold */
+@font-face {
+    font-family: 'Anton';
+    src: url('font/Anton-Regular.woff2') format('woff2'),
+        url('font/Anton-Regular.woff') format('woff');
+    font-style: normal;
+}
+            
