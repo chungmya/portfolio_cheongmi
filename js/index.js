@@ -43,10 +43,25 @@ $(window).scroll(function(){ //버튼 모양 숨김
 
 // 위치 영역
 $('.contact').click(function(){
+    var offset = $('#resume').offset();
     $('html, body').animate({
-        scrollTop:5200
+        scrollTop:offset.top
     },500);
     return false;
 });
+
+//path
+// const svgPath = document.querySelectorAll('.path');
+
+// const svgText = anime({
+//   targets: svgPath,
+//   loop: true,
+//   direction: 'alternate',
+//   strokeDashoffset: [anime.setDashoffset, 0],
+//   easing: 'easeInOutSine',
+//   duration: 700,
+//   delay: (el, i) => { return i * 500 }
+// });
+
 
 });//준비 문서 선언
