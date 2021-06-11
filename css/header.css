@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* header - mobiel */
+header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 200px;}
+header {display: flex; justify-content: space-between; align-items: center;  background-color: #f1eee8;}
+header h1 { background: url(../images/logo.svg) no-repeat 50% 50%; background-size: contain; text-indent: -9999px; margin: 25px 25px;  margin-left: 50px; }
+header h1 a { display: block; width: 250px; }
+
+/* 웹 gnb 숨기기 */
+header nav { display: none; }
+header .togglebtn a  { display: block; line-height: 51px; padding: 15px 28px 3px 28px; margin-right: 20px;}
+header .togglebtn img { width: 75px; }
+
+/* .togglemenu */
+header .togglemenu {margin-right: -100%;}
+header .togglemenu { box-sizing: border-box; background-color: #f1eee8; float:right; width: 100%; height: 100vh; position: absolute; top: 0; right: 0; text-transform: none; padding: 4%; }
+header .toggle_inner { border: 2px solid #1a1a1a; height: 100%; }
+header .togglemenu .closebtn { position: absolute; top: 2%; right: 8%; padding: 5px;}
+header .togglemenu .closebtn img {width: 80px; padding-top: 30px;}
+header .togglemenu .toggle_section { margin-top: 50%; text-align: center; } 
+header .togglemenu .toggle_section li {font-family: 'Anton', sans-serif; font-weight: bold; font-size: 5em; line-height: 2; margin-bottom: 15px; width: 100%; }
+header .togglemenu .toggle_section li:hover { color: #dd000a; }
+header .togglemenu .produce { margin-top: 50%; font-size: 2em; font-weight: bold; text-align: center; }
+header .togglemenu .produce li {line-height: 2.5;}
+
+@media (min-width: 1030px) {
+    header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 100px;}
+    header .togglebtn img { width: 55px; }
+}
+
+
+
+@media (min-width: 1441px) {
+ /* header - pc */
+ header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 9.8vh;}
+ header {display: flex; justify-content: space-around; align-items: center; }
+ header h1 { width: 180px; margin: 10px 0;}
+ header h1 { background: url(../images/logo.svg) no-repeat 50% 50%; background-size: contain; text-indent: -9999px; margin: 10px 25px;}
+
+ /* header .togglebtn */
+ header .togglebtn {display: none;}
+ /* header nav */
+ header nav { display : block; }
+ header nav .gnb {display: flex; justify-content: flex-end; width: 50vw; }
+ header nav .gnb li {font-family: 'Anton', sans-serif; font-size: 1.3em; font-weight: bold; width: 180px; letter-spacing: 1px; height: 80px; text-align: center; line-height: 80px; }
+ header nav .gnb li:hover a { color: #1a1a1a6e; }
+ header nav .gnb li:active { color: #1a1a1a6e; }
+}

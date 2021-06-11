@@ -7,38 +7,39 @@ body {font-family: 'S-Core_Dream', 'Noto Sans KR', '맑은 고딕','helvetica','
 ul, li {margin: 0; padding: 0; list-style: none;}
 a {text-decoration: none; color: inherit;}
 
-h2{font-size: 1.6em; line-height: 1.6; letter-spacing: -0.5px; margin: 0;}
+h2{font-size: 1.6em; line-height: 1.6; letter-spacing: 2px; margin: 0;}
 
-#container {background-image: url(../images/paper_bg.jpg); background-repeat: no-repeat; background-size: cover; background-color: rgba(255, 243, 197, 0.742); background-blend-mode: overlay; overflow: hidden; height: 100vh;}
+#container { background-color: #f1eee8; overflow: hidden; height: 100vh; }
 
 /* header */
-header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 9vh;}
-header {display: flex; justify-content: space-between; align-items: center; border-bottom: 2px #000 solid; background-color: #fff;}
-header h1 { width: 55px; background: url(../images/logo.svg) no-repeat 50% 50%; background-size: contain; text-indent: -9999px; margin: 10px 25px;}
-header h1 a {display: block;}
+header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 76px; border-bottom: 1px solid #000;}
+header {display: flex; justify-content: space-between; align-items: center; background-color: #f1eee8; }
+header h1 { width: 95px; background: url(../images/logo.svg) no-repeat 50% 50%; background-size: contain; text-indent: -9999px; margin: 10px 19px;}
+header h1 a { display: block; }
 
 /*-----웹 gnb 숨기기-----*/
 header nav {display: none;}
 
-header .togglebtn a  {display: block; width: 28px; height: 51px; line-height: 51px; padding: 15px 28px 3px 28px}
-header .togglebtn img {width: 28px;}
+header .togglebtn a  { display: block; line-height: 51px; padding: 15px 19px 2px 26px}
+header .togglebtn a img { width: 30px; }
 
-/* .togglemenu */
-header .togglemenu {margin-right: -280px;}
-header .togglemenu {float:right; background-color: #fff; width: 280px; height: 100vh; position: absolute; top: 0; right: 0; text-transform: none;}
-header .togglemenu .closebtn {position: absolute; top: 2%; right: 8%; padding: 5px;}
-header .togglemenu .closebtn img {width: 28px;}
-header .togglemenu .toggle_section {margin: 250px 0 0 40px;}
-header .togglemenu .toggle_section li {font-family: 'Lexend Peta'; font-weight: bold; font-size: 2.1em; line-height: 2; margin-bottom: 15px;}
+/* toggle */
+header .togglemenu {margin-right: -100%;}
+header .togglemenu { box-sizing: border-box; background-color: #f1eee8; float:right; width: 100%; height: 100vh; position: absolute; top: 0; right: 0; text-transform: none; padding: 4%; }
+header .toggle_inner { border: 2px solid #1a1a1a; height: 100%; }
+header .togglemenu .closebtn { position: absolute; top: 2%; right: 8%; padding: 5px;}
+header .togglemenu .closebtn img { width: 30px; padding-top: 10px; }
+header .togglemenu .toggle_section {margin-top: 50%; padding: 0 30%; text-align: center;} 
+header .togglemenu .toggle_section li {font-family: 'Anton', sans-serif; font-weight: bold; font-size: 2.1em; line-height: 2; margin-bottom: 15px; width: 100%; }
 header .togglemenu .toggle_section li:hover {color: #dd000a;}
-header .togglemenu .produce {margin: 120px 0 0 40px; font-size: 0.8em; font-weight: bold;}
-header .togglemenu .produce li {line-height: 2.5;}
+header .togglemenu .produce { margin-top: 50%; font-size: 0.8em; font-weight: bold; text-align: center; }
+header .togglemenu .produce li { line-height: 2.5; }
 
 /* display none */
 .web, .preview, .background, .research, .uxui, .solution, .persona, .uxflow, .wireframe, .concept, .process, .link-section, .link-2, .preview-2, #topbtn {display: none;}
 
 /* #contents */
-#contents { margin: 9vh 4%; margin-bottom: 4%; border: 2px solid #000; position: relative; background-color: #fff; }
+#contents { margin: 9vh 4%; margin-bottom: 4%; border: 1px solid #000; position: relative; background-color: #fff; }
 
 /* mobile alert */
 /* .project-head mobile */
@@ -60,32 +61,34 @@ header .togglemenu .produce li {line-height: 2.5;}
 
 body {font-size: 1.125em;}
 #container {height: auto;}
-h2 {font-family: 'Lexend Peta'; font-size: 3.8em;  margin: 0; line-height: 1.2;}
-h3 {font-family: 'Lexend Peta'; font-size: 2em; margin-top: 10%;}
-h4 {font-family: 'Lexend Peta'; font-size: 1.125em; color: #039492; margin-bottom: 0;}
+h2 {font-family: 'Anton', sans-serif; font-size: 3.8em;  margin: 0; line-height: 1.2;}
+h3 {font-family: 'Anton', sans-serif; font-size: 2em; margin-top: 10%;}
+h4 {font-family: 'Anton', sans-serif; font-size: 1.125em; color: #039492; margin-bottom: 0;}
 /* h4::after {content: ""; border: 2px #039492 solid;} */
 
 /* header */
-header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 9.8vh;}
-header {display: flex; justify-content: space-around; align-items: center; border-bottom: 3px #000 solid;}
-header h1 { width: 120px; margin: 10px 0;}
-header h1 { background: url(../images/logo.svg) no-repeat 50% 50%; background-size: 68%; text-indent: -9999px; margin: 10px 25px;}
+header {position: fixed; top: 0; left: 0; z-index: 900; width: 100%; height: 9.8vh; border-bottom: 2px solid #000; }
+header {display: flex; justify-content: space-around; align-items: center; }
+header h1 { width: 180px; margin: 10px 0;}
+header h1 { background: url(../images/logo.svg) no-repeat 50% 50%; background-size: contain; text-indent: -9999px; margin: 10px 25px; }
 
 /* header .togglebtn */
 header .togglebtn {display: none;}
 /* header nav */
 header nav {display : block;}
-header nav .gnb {display: flex; justify-content: space-around;width: 50vw; }
-header nav .gnb li {font-family:'Lexend Peta'; font-size: 1.3em; font-weight: bold;}
-header nav .gnb li:hover {color: #dd000a;}
-header nav .gnb li:active {color: #dd000a;}
+header nav .gnb { display: flex; justify-content: flex-end; width: 50vw; }
+header nav .gnb li {font-family:'Anton', sans-serif; font-size: 1.3em; font-weight: bold; width: 180px; height: 80px; text-align: center; line-height: 80px; letter-spacing: 1px; }
+header nav .gnb li:hover a { color: #1a1a1a6e; }
+header nav .gnb li:active { color: #1a1a1a6e; }
+header nav .gnb .contact { background-color: #f1eee8; }
+
 
 /* display block */
 .web, .preview, .background, .research, .uxui, .solution, .persona, .uxflow, .wireframe, .concept, .process,.link-2,.link-section, #topbtn {display: block;}
 .mobile {display: none;}
 
 /* #contents */
-#contents {margin: 9vh 10%; border: 3px solid #000;}
+#contents {margin: 9vh 10%; border: 2px solid #000;}
 
 /* .project-head */
 .project-head {margin: 0 auto; margin-bottom: 20px; padding: 10%;}
@@ -104,7 +107,7 @@ header nav .gnb li:active {color: #dd000a;}
 
 /* .preview */
 .preview {height: 886px;}
-.preview {border-top: 3px solid #000; border-bottom: 3px solid #000; }
+.preview {border-top: 2px solid #000; border-bottom: 2px solid #000; }
 .preview {background: url(../images/app_mockup_main.png) no-repeat 50% 50%; background-size: cover;}
 .preview div {margin: 103px 0 0 120px; color: #fff; font-family: 'S-Core_Dream';}
 .preview div p {font-size: 2em; font-weight: 300;    margin-bottom: 30px; margin-top: 130px;}
@@ -114,12 +117,12 @@ header nav .gnb li:active {color: #dd000a;}
 .preview div ul li span {display: inline-block; width: 100px; font-weight: bold;}
 
 /*-- padding 공통 --*/
-.background, .uxui, .solution, .persona, .uxflow, .wireframe, .concept, .process {border-bottom: 3px #000 solid; padding: 0 10%; padding-bottom: 10%;}
+.background, .uxui, .solution, .persona, .uxflow, .wireframe, .concept, .process {border-bottom: 2px #000 solid; padding: 0 10%; padding-bottom: 10%;}
 
 /* .background*/
-.background {border-bottom: 3px #000 solid; padding: 0 10%; padding-bottom: 10%;}
+.background {border-bottom: 2px #000 solid; padding: 0 10%; padding-bottom: 10%;}
 .background .problems {height: 400px; background: url(../images/app_orignal_app.png)no-repeat 50% 50%; background-size: contain; margin-bottom: 90px; position: relative;}
-.background .problems ul li {background-color: #fff; border: 3px #000 solid; border-radius: 50px; width: 254px; height: 74px; text-align: center; line-height: 74px; font-weight: bold;}
+.background .problems ul li {background-color: #fff; border: 2px #000 solid; border-radius: 50px; width: 254px; height: 74px; text-align: center; line-height: 74px; font-weight: bold;}
 
 .background .problems ul li:nth-child(1){position: absolute; top: 90px; left: 180px;}
 .background .problems ul li:nth-child(2){position: absolute; top: 150px; right: 190px;}
@@ -131,7 +134,7 @@ header nav .gnb li:active {color: #dd000a;}
 .background .research .research-list ul li {font-weight: bold; font-size: 1.3em; margin-left: 25px; margin-bottom: 10px;}
 
 /*--- .link ---*/
-.link-2 {height: 6vh; text-align: center; border-bottom: 3px solid #000; font-size: 1em; font-weight: bold; color: #dd000a; line-height: 6vh;}
+.link-2 {height: 6vh; text-align: center; border-bottom: 2px solid #000; font-size: 1em; font-weight: bold; color: #dd000a; line-height: 6vh;}
 .link-2:hover {background-color: #dd000a; color: #fff;}
 
 /* .uxui */
@@ -198,10 +201,10 @@ line-height: 90px;}
 .concept .icon { margin-top: 40%;}
 
 /* tprocess*/
-.process {border-bottom: 3px #000 solid;}
+.process {border-bottom: 2px #000 solid;}
 .process .logo .logoimg {margin-top: 5%;}
 .process .time {margin-top: 10%;}
-.process .time .badge {margin-top: 10%; width: 500px;     text-align: center; }
+.process .time .badge {margin-top: 10%; width: 500px; text-align: center; }
 .process .badge-list {display: flex; flex-wrap: nowrap; margin-top: 2%;}
 .process .badge-list > li {margin-left: 2%; text-align: center;}
 .process .badge-list > li:first-child {margin-left: 0;}
@@ -217,7 +220,7 @@ line-height: 90px;}
 
 /* .preview-2 */
 .preview-2 {background-image: url(../images/app_thumb.png); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover; background-color: #039492; height: 50vh;}
-.preview-2 {border-top: 3px solid #000; text-indent: -9999px;}
+.preview-2 {border-top: 2px solid #000; text-indent: -9999px;}
 
 /* #topbtn */
 #topbtn  {width: 50px; height: 50px; border: 2px solid #000; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); float: right; position: fixed; right: 3%; bottom: 15%;}
