@@ -1,232 +1,352 @@
 <!DOCTYPE html>
 <html lang='ko'>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-    <meta name="description" content="2020년 웹퍼블리셔 박청미 포트폴리오 사이트입니다.">
-   <title>portfolio index</title>
+    <head>
+        <!-- ** 2021 3월 포트폴리오입니다 ** -->
+        <meta charset="utf-8">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='view=port' content='width=device-width, initial-scal=1.0'>
+        <title>박청미 포트폴리오 2021</title>
 
-   <!-- sns -->
-   <meta property="og:title" content="2020년 웹퍼블리셔 박청미 포트폴리오 사이트입니다.">
-   <meta property="og:description" content="2020년 웹퍼블리셔 박청미 포트폴리오 사이트입니다.">
-   <meta property="og:url" content="http://bluepark1023.dothome.co.kr">
-   <meta property="og:image" content="http://bluepark1023.dothome.co.kr/images/img.jpg">
-   <meta name="twitter:card" content="요약">
-   <meta name="twitter:title" content="2020년 웹퍼블리셔 박청미 포트폴리오 사이트입니다.">
-   <meta name="twitter:url" content="http://bluepark1023.dothome.co.kr">
-   <meta name="twitter:image" content="http://bluepark1023.dothome.co.kr/images/img.jpg">
-   <meta name="twitter:description" content="2020년 웹퍼블리셔 박청미 포트폴리오 사이트입니다.">
+        <!-- sns -->
+        <meta property="og:title" content="2020년 웹퍼블리셔 박청미 포트폴리오 사이트입니다.">
+        <meta property="og:description" content="2020년 웹퍼블리셔 박청미 포트폴리오 사이트입니다.">
+        <meta property="og:url" content="http://bluepark1023.dothome.co.kr">
+        <meta property="og:image" content="http://bluepark1023.dothome.co.kr/images/img.jpg">
+        <meta name="twitter:card" content="요약">
+        <meta name="twitter:title" content="2020년 웹퍼블리셔 박청미 포트폴리오 사이트입니다.">
+        <meta name="twitter:url" content="http://bluepark1023.dothome.co.kr">
+        <meta name="twitter:image" content="http://bluepark1023.dothome.co.kr/images/img.jpg">
+        <meta name="twitter:description" content="2020년 웹퍼블리셔 박청미 포트폴리오 사이트입니다.">
 
-   <!-- 파비콘 -->
-   <link rel="apple-touch-icon" sizes="57x57" href="stylesheet/favicon.ico/apple-icon-57x57.png">
-   <link rel="apple-touch-icon" sizes="60x60" href="stylesheet/favicon.ico/apple-icon-60x60.png">
-   <link rel="apple-touch-icon" sizes="72x72" href="stylesheet/favicon.ico/apple-icon-72x72.png">
-   <link rel="apple-touch-icon" sizes="76x76" href="stylesheet/favicon.ico/apple-icon-76x76.png">
-   <link rel="apple-touch-icon" sizes="114x114" href="stylesheet/favicon.ico/apple-icon-114x114.png">
-   <link rel="apple-touch-icon" sizes="120x120" href="stylesheet/favicon.ico/apple-icon-120x120.png">
-   <link rel="apple-touch-icon" sizes="144x144" href="stylesheet/favicon.ico/apple-icon-144x144.png">
-   <link rel="apple-touch-icon" sizes="152x152" href="stylesheet/favicon.ico/apple-icon-152x152.png">
-   <link rel="apple-touch-icon" sizes="180x180" href="stylesheet/favicon.ico/apple-icon-180x180.png">
-   <link rel="icon" type="image/png" sizes="192x192"  href="stylesheet/favicon.ico/android-icon-192x192.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="stylesheet/favicon.ico/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="96x96" href="stylesheet/favicon.ico/favicon-96x96.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="../stylesheet/favicon.ico/favicon-16x16.png">
-   <!-- <link rel="manifest" href="stylesheet/favicon.ico/manifest.json"> -->
-   <meta name="msapplication-TileColor" content="#ffffff">
-   <meta name="msapplication-TileImage" content="stylesheet/favicon.ico/ms-icon-144x144.png">
-   <meta name="theme-color" content="#ffffff">
-   
-   <!-- 평준화 스타일시트 -->
-   <link rel="stylesheet" href="stylesheet/normalize.css">
-   <link rel="stylesheet" href="stylesheet/font.css">
-   <link rel="stylesheet" href="css/index.css">
+        <!-- 파비콘 -->
+        <link rel="apple-touch-icon" sizes="57x57" href="stylesheet/favicon.ico/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="stylesheet/favicon.ico/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="stylesheet/favicon.ico/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="stylesheet/favicon.ico/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="stylesheet/favicon.ico/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="stylesheet/favicon.ico/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="stylesheet/favicon.ico/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="stylesheet/favicon.ico/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="stylesheet/favicon.ico/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="stylesheet/favicon.ico/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="stylesheet/favicon.ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="stylesheet/favicon.ico/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../stylesheet/favicon.ico/favicon-16x16.png">
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-    <script src= "https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
-    <script src="js/index.js"></script>
-</head>
+        <!-- <link rel="manifest" href="stylesheet/favicon.ico/manifest.json"> -->
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="stylesheet/favicon.ico/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
 
-<body>
-    <div class="container">
-        <header>
-            <h1><a href ="index.html">logo</a></h1>
-            <nav>
-                <ul class="gnb">
-                    <li><a href="index.html">Project</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="contact"><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="togglebtn">
-                <a href="#"><img src="images/menu.svg" alt="togglemenu"></a>
-            </div>
-            <div class="togglemenu">
-                <div class="closebtn"><a href="#"><img src="images/button_x.png" alt="close"></a></div>
-                <ul class="toggle_section">
-                    <li><a href="index.html">Project</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="contact"><a href="#">Contact</a></li>
-                </ul>
-                <ul class="produce">
-                    <li>박청미 | Web Publisher</li>
-                    <li>010.4477.4158</li>
-                    <li>bluepark1023@gmail.com</li>
-                </ul>
-            </div><!--/togglemenu-->
-        </header>
+        <!-- css -->
+        <link rel="stylesheet" href="stylesheet/normalize.css">
+        <link rel="stylesheet" href="stylesheet/font.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/index.css">
 
-        <section class="hometitle"><h2>PROJECT</h2></section>
-        <div class="contents">
-        <!-- 쇼핑몰 -->
-            <section class="webimg">
-                <div class="bg"><a href="Project_shoppingmall.html"></a></div>
-            </section>
-            <section class="web txt">
-                <h3>Shoppingmall<br>
-                    Responsive Web</h3>
-                <p>‘명화 액자 쇼핑몰’ 반응형 웹 페이지</p>
-                <ul class ="tool">
-                    <li>
-                        <span>Total Time</span>
-                        10일
-                    </li>
-                    <li>
-                        <span>Role</span>
-                        디자인 · 퍼블리싱 100%
-                    </li>
-                    <li>
-                        <span>Type</span>
-                        쇼핑몰 반응형 웹
-                    </li>
-                    <li>
-                        <span>Used</span>
-                        HTML 5 | CSS3 | jQuery
-                    </li>
-                </ul>
-                    <a href="Project_shoppingmall.html" class="link more">MORE ></a>
-            </section>
-        <!-- 앱 -->
-            <section class="appimg">
-                <div class="bg"><a href="project_app.html"></a></div>
-            </section>
-            <section class="app txt">
-                <h3>app Redesign</h3>
-                <p>건강 어플 ‘금연노트’ 리디자인.</p>
-                <ul class="tool">
-                    <li>
-                        <span>Total Time</span>
-                        20.05.13 ~ 20.07.13
-                    </li>
-                    <li>
-                        <span>Type</span>
-                        어플리케이션 리디자인 팀 프로젝트
-                    </li>
-                    <li>
-                        <span>Role</span>
-                        디자인 - 90%<br>
-                        프로토타입 - 75%<br>
-                        커뮤니케이션 - 100%<br>
-                    </li>
-                    <li>
-                        <span>Used</span>
-                        Illustrator | HTML 5 | CSS3 | jQuery
-                    </li>
-                </ul>
-                    <a href="project_app.html" class="link more">MORE ></a>
-            </section>
+        <!-- script -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src= "https://cdn.jsdelivr.net/npm/jquery-ui-dist@1.12.1/jquery-ui.min.js"></script>
 
-        <!-- sevenbrau -->
-            <section class="sevenbrauimg">
-                <div><a href="Project_sevenbrau.html"></a></div>
-            </section>
-            <section class="sevenbrau txt">
-                <h3>7brau Redesign & Responsive Web</h3>
-                <p>세븐브로이 맥주 홈페이지 리디자인, 애니메이션 효과를 활용한 반응형 웹 제작</p>
-                <ul class ="tool">
-                    <li>
-                        <span>Total Time</span>
-                        8일
-                    </li>
-                    <li>
-                        <span>Role</span>
-                        디자인 · 퍼블리싱 100%
-                    </li>
-                    <li>
-                        <span>Type</span>
-                        브랜드 리디자인 & 반응형 웹
-                    </li>
-                    <li>
-                        <span>Used</span>
-                        Illustrator | HTML 5 | CSS3 | jQuery
-                    </li>
-                </ul>
-                <a href="Project_sevenbrau.html" class="link more">MORE ></a>
-            </section>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/hiphop5782/js@latest/typing/hakademy-typing.min.css">
+        <script src="https://cdn.jsdelivr.net/gh/hiphop5782/js@latest/typing/hakademy-typing.min.js"></script>
 
-        <!-- DDchicken -->
-            <section class="companyimg">
-                <div><a href="Project_DDchicken.html"></a></div>
-            </section>
-            <section class="company txt">
-                <h3>DDchicken Redesign & Responsive Web</h3>
-                <p>디디치킨 홈페이지 리디자인, 반응형 웹 제작</p>
-                <ul class ="tool">
-                    <li>
-                        <span>Total Time</span>
-                        9일
-                    </li>
-                    <li>
-                        <span>Role</span>
-                        디자인 · 퍼블리싱 100%
-                    </li>
-                    <li>
-                        <span>Type</span>
-                        브랜드 리디자인 & 반응형 웹
-                    </li>
-                    <li>
-                        <span>Used</span>
-                        Illustrator | HTML 5 | CSS3 | jQuery
-                    </li>
-                </ul>
-                <a href="Project_DDchicken.html" class="link more">MORE ></a>
-            </section>
+        <script src="js/index.js"></script>
+        <script src="js/project_script.js"></script>
+        <script src="js/typing.js"></script>
+    </head>
 
-        <!-- package -->
-            <section class="packageimg">
-                <div><a href="Project_package.html"></a></div>
-            </section>
-            <section class="package txt">
-                <h3>Package Design</h3>
-                <p>건강 간편식 샐러드 도시락 패키지 11종 디자인</p>
-                <p class="tool">Illustrator | Photoshop<br>2018.09 Design Team Project</p>
-                <a href="Project_package.html" class="link more">MORE ></a>
-                </section>
+    <body>
+        <div class="wrap">
+            <header>
+                <h1><a href ="index.html">logo</a></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li class="gnb_project">
+                            <a href="project.html">My Work</a>
+                        </li>
+                        <li class="contact">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="togglebtn">
+                    <a href="#"><img src="images/menu.svg" alt="togglemenu"></a>
+                </div>
+                <div class="togglemenu">
+                    <div class="toggle_inner">
+                        <div class="closebtn"><a href="#"><img src="images/button_x.png" alt="close"></a></div>
+                        <ul class="toggle_section">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="project.html">My Work</a></li>
+                        </ul>
+                        <ul class="produce">
+                            <li>박청미 | Web Publisher</li>
+                            <li>010.4477.4158</li>
+                            <li>bluepark1023@gmail.com</li>
+                        </ul>
+                    </div>
+                </div><!--/togglemenu-->
+            </header>
+            <div class="contents">
+                <div class="main">
+                    <div class="main__inner">
+                    <h2>안녕하세요.웹 퍼블리셔 박청미입니다.</h2>
+                        <div class="typing-txt"> 
+                            <ul>
+                              <li>#소통하는</li>
+                              <li>#열정있는</li>
+                              <li> #꼼꼼한 </li>
+                          </ul>
+                        </div>
+                        <p class="typing-p">
+                            안녕하세요<br>
+                            <span class="typing"></span><br>
+                            박청미입니다 :)
+                        </p> 
+                    </div>
+                </div>
+                <div class="pr__container">
+                    <div class="pr-slogan">
+                        <ul>
+                            <li>
+                            Hello I’m Creative<em> Web Publisher</em>
+                            Hello I’m Creative<em> Web Publisher</em>
+                            Hello I’m Creative<em> Web Publisher</em>
+                            Hello I’m Creative<em> Web Publisher</em>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- /.pr__container -->
+                <div class="wrapper">
+                    <section class="about">
+                        <div class="about__inner inner">
+                            <div class="profile__pic" >
+                            </div>
+                            <div class="about__text">
+                                <div class="about_back wave-right">
+                                    <h3 class="about__title">Who am I?</h3>
+                                    <!-- <img src="images/title01.png" alt="title01"> -->
+                                    <svg viewBox="0 0 601 612.088" class="path">
+                                        <path fill="none" stroke="#3fa555" stroke-width="75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M119.44,159.289l363.688-83.598L75,315.769l451-119.754c0,0-438.417,205.677-429.107,217.216s411.751-102.808,420.818-84.172 c9.066,18.636-378.123,181.202-378.123,181.202s373.204-111.324,381.41-98.033c8.205,13.291-215.624,133.313-241.506,123.611" style="stroke-dashoffset: 2000; stroke-dasharray: none;"></path>
+                                    </svg>
+                                </div>
+                                <div class="about_subtitle">
+                                    <h4>안녕하세요!<br>
+                                    사용성이 좋은 코드로<br>
+                                    모두와 소통하는<br>
+                                    <strong>웹 퍼블리셔에요.</strong></h4>
+                                </div>
+                                <div class="about_subtext">
+                                    <p><strong>사용성이 좋은, 깔끔한 코드를 지향합니다.</strong><br>
+                                   심미적으로 훌륭한 웹 사이트라고 해도 혼자만 알아볼 수 있는 코드로 구성된 웹사이트는, 좋은 웹사이트라고 볼 수 없죠. 공통으로 적용된 요소가 재사용이 용이하게, 한번에 수정이 가능한 코드로 작성해야합니다. 또한, 한눈에 코드 흐름이 파악되도록, 간결하게 작성되어야 합니다.
+                                   <br>
+                                   <p><strong>사용자 입장에서 생각합니다.</strong><br>
+                                   사용자 입장에서 좀 더 사용성이 좋은 웹사이트를 고민하고 더 나은 방향에 대해 팀원들과 이야기를 나눕니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section><!--/.about-->
 
-            <section class="productimg">
-                <div><a href="images/web_productpage_img.png" target="_blank"></a></div>
-            </section>
-            <section class="product txt">
-                <h3>Product Page
-                    Design</h3>
-                <p>건강 간편식 상품 상세페이지 디자인</p>
-                <p class="tool">Illustrator | Photoshop | Sketch<br> 2018.01 ~ Design Team Project</p>
+                    <section class="skills">
+                        <div class="skills__inner inner">
+                            <div class="skills__head">
+                                <div class="skill_back wave-left">
+                                    <h3 class="skills__title">My Skills</h3>
+                                    <svg viewBox="0 0 601 612.088" class="path">
+                                        <path fill="none" stroke="#e994a7" stroke-width="75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M119.44,159.289l363.688-83.598L75,315.769l451-119.754c0,0-438.417,205.677-429.107,217.216s411.751-102.808,420.818-84.172 c9.066,18.636-378.123,181.202-378.123,181.202s373.204-111.324,381.41-98.033c8.205,13.291-215.624,133.313-241.506,123.611" style="stroke-dashoffset: 2000; stroke-dasharray: none;"></path>
+                                    </svg>
+                                </div>
+                                <div class="skill_subtitle">
+                                    <h4>제가 할 수 있는 일과<br>
+                                        끊임없이 발전하는 저의<br>
+                                        <strong>공부 기록들을 소개합니다.</strong>
+                                    </h4>
+                                    <a href="https://www.notion.so/cheongmi/4dcb991cf0f042908c6ac2fd595a9256?v=4d25d24af1884778bdaef8e40cfd3fe9" target="_blank" class="button">기록보기</a>
+                                </div>
+                            </div>
+                            <div class="skills__text">
+                                <ul class="skills-list">
+                                    <li class="skills-list__item">
+                                        <strong class="skills-list__name">웹표준</strong>
+                                        <p class="skills-list__text">웹 퍼블리싱은 접근성과 웹 표준을 준수하고자 노력하고 있으며, 모바일 기반의 반응형 웹 제작이 가능합니다.</p>
+                                    </li>
+                                    <li class="skills-list__item">
+                                        <strong class="skills-list__name">배려있는 소통</strong>
+                                        <p class="skills-list__text">프로젝트를 진행 할때 팀원들과 소통을 많이하며, 원활한 협업을 이끌어 냅니다.</p>
+                                    </li>
+                                    <li class="skills-list__item">
+                                        <strong class="skills-list__name">Skills</strong>
+                                        <p class="skills-list__text">HTML5, CSS3, jQuery, Javascript를 이해하며, 다룰줄 압니다. 유지보수를 고려하며 코드를 작성합니다. 또한 Illustrator, photoshop등 디자인 툴을 사용할수 있습니다.</p>
+                                    </li>
+                                    <li class="skills-list__item">
+                                        <strong class="skills-list__name">꾸준함</strong>
+                                        <p class="skills-list__text">더 나은 코드를 위해 부족한 역량인 JS를 인터넷 강의로 공부하고 있으며, 현재 웹디자인 기능사 실기 준비 중입니다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section><!--/.skills-->
 
+                    <section class="myskill">
+                        <div class="myskill-inner inner">
+                            <h3>My Skill</h3>
+                            <!-- HTML Chart -->
+                            <div class="myskill_container">
+                                <figure class="chart" data-percent="75">
+                                    <figcaption>HTML</figcaption>
+                                    <img class="html" src="images/skill01.png">
+                                    <svg width="200" height="200">
+                                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                                    </svg>
+                                </figure>
+                                    
+                                <!-- CSS Chart -->
+                                <figure class="chart" data-percent="75">
+                                    <figcaption>CSS</figcaption>
+                                    <img class="css" src="images/skill02.png">
+                                    <svg width="200" height="200">
+                                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                                    </svg>
+                                </figure>
+                                    
+                                <!-- Javascript Chart -->
+                                <figure class="chart" data-percent="25">
+                                    <figcaption>Javascript</figcaption>
+                                    <img class="javascript" src="images/skill03.png">
+                                    <svg width="200" height="200">
+                                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                                    </svg>
+                                </figure>
+                                    
+                                <!-- jQuery Chart -->
+                                <figure class="chart" data-percent="50">
+                                    <figcaption>jQuery</figcaption>
+                                    <img class="jQuery" src="images/skill04.png">
+                                    <svg width="200" height="200">
+                                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                                    </svg>
+                                </figure>
 
-            </section>
-        </div><!-- /contents -->
+                                <!-- Ai Chart -->
+                                <figure class="chart" data-percent="95">
+                                    <figcaption>Ai</figcaption>
+                                    <img class="Ai" src="images/skill05.png">
+                                    <svg width="200" height="200">
+                                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                                    </svg>
+                                </figure>
 
-        <footer><p>I hope to <span>meet you soon</span></p>
-            <div>
-                <ul>
-                    <li>010 4477 4158</li>
-                </ul>
-                <ul>
-                    <li>bluepark1023@gmail.com</li>
-                    <li>github.com/chungmya</li>
-                </ul>
-            </div>
-        </footer>
-    </div><!-- /container -->
-</body>
+                                <figure class="chart" data-percent="95">
+                                    <figcaption>Ps</figcaption>
+                                    <img class="Ps" src="images/skill06.png">
+                                    <svg width="200" height="200">
+                                    <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+                                    </svg>
+                                </figure>   
+                            </div>
+                        </div><!--/.inner-->
+                    </section><!--/.skill-banner-->
+
+                    <section class="work">
+                        <div class="work__inner inner">
+                            <div class="work__thumbnail">
+                                <ul class="work__list">
+                                    <li class="work__list-item01"></li>
+                                    <li class="work__list-item02"></li>
+                                    <li class="work__list-item03"></li>
+                                </ul>
+                            </div>
+                            <div class="work__text">
+                                <div class="work_back wave-right">
+                                    <h3 class="work__title">My work</h3>
+                                    <svg viewBox="0 0 601 612.088" class="path">
+                                        <path fill="none" stroke="#498fd5" stroke-width="75" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M119.44,159.289l363.688-83.598L75,315.769l451-119.754c0,0-438.417,205.677-429.107,217.216s411.751-102.808,420.818-84.172 c9.066,18.636-378.123,181.202-378.123,181.202s373.204-111.324,381.41-98.033c8.205,13.291-215.624,133.313-241.506,123.611" style="stroke-dashoffset: 2000; stroke-dasharray: none;"></path>
+                                    </svg>
+                                </div>
+                                <div class="work_subtext">
+                                    <p><strong>제가 작업한 웹사이트입니다.</strong> <br>
+                                        기존에 있는 웹사이트를 리 디자인한 작업물이며 기획(100%), 디자인(100%), 퍼블리싱(100%)으로
+                                        UI와  웹표준을 고려하여 작업했습니다. 코드가 흐름이 잘보이도록, 시멘틱 마크업에 준수하여 꼼꼼하게
+                                        작업하였습니다. HTML5 / CSS3 / JavaScript / jQuery 를 사용하였고 뷰포트와 미디어쿼리를 이용해 반응형으로 제작하였습니다.
+                                    </p>
+                                    <a href="project.html" target="_blank" class="button">작업물보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section><!--/.work-->
+
+                    <section class="pr">
+                        <div class="pr__container">
+                            <div class="pr-slogan">
+                                <ul>
+                                    <li>
+                                    Are you looking for a <em>publisher?</em>
+                                    Are you looking for a <em>publisher?</em>
+                                    Are you looking for a <em>publisher?</em>
+                                    Are you looking for a <em>publisher?</em>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> <!-- /.pr__container -->
+                        <div class="feature">
+                            <ul class="feature__list">
+                                <li class="feature__list-item01 wave-right"> 
+                                    <img src="images/title04.png" alt="Publishing">
+                                </li>
+                                <li class="feature__list-item02 wave-left">
+                                    <img src="images/title05.png" alt="Organized">
+                                </li>
+                                <li class="feature__list-item03 wave-right">
+                                    <img src="images/title06.png" alt="Passion">
+                                </li>
+                            </ul>
+                            <ul class="feature__list2">
+                                <li class="feature__list-item04 wave-right">Publishing</li>
+                                <li class="feature__list-item05 wave-left">Organized</li>
+                                <li class="feature__list-item06 wave-right">Passion</li>
+                            </ul>
+                        </div><!-- .feature -->
+
+                        <div class="advantages" id="resume">
+                            <div class="advantages__title">
+                                <h4>이런 사람을 원한다!<br>
+                                    <strong>그러면, 저를 찾아주세요.</strong>
+                                </h4>
+                            </div>
+                            <div class="advantages__contents">
+                                <ul class="advantages__list">
+                                    <li>파일 정리 잘하는 꼼꼼한 웹 퍼블리셔를 찾는다면?</li>
+                                    <li>배움의 열정이 넘치는 웹 퍼블리셔를 찾는다면?</li>
+                                    <li>배려있는 소통 스킬을 가진 웹 퍼블리셔를 찾는다면?</li>
+                                    <li>책임감이 강한 웹 퍼블리셔를 찾는다면?</li>
+                                </ul>
+                            </div>
+                            <div class="advantages_button">
+                                <a href="https://www.notion.so/RESUME-b992de9e88a44ccf8ce27e94dbf12dcb" target="_blank" class="button">Resume</a>
+                            </div>  
+                        </div>
+                    </section><!--/.pr-->
+
+                    <section class="contact">
+                        <div class="contact__inner inner">
+                            <div class="contact__title">Thank You:)</div>
+                            <ul class="contact__link">
+                                <li>bluepark1023@gmail.com</li>
+                                <li>010 4477 4158</li>
+                                <li><a href = "https://github.com/chungmya" >github.com/chungmya</a></li>
+                            </ul>
+                        </div>
+                    </section><!--/.contact-->
+                </div><!--/.contents-->
+            </div><!--.wrapper-->
+            <footer>
+                <div class="footer__inner inner">
+                    <ul>
+                        <li>@2021 WebPublisher CM</li>
+                    </ul>
+                </div>
+            </footer>
+        </div><!--/.wrap-->
+    </body>
 </html>
