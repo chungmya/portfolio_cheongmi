@@ -374,7 +374,10 @@ svg .outer { stroke: #efcd2d; }
   .wrap .contents p { font-size: 1.2em;}
   section .inner { padding: 80px 100px; }
 
-  .wrap .contents .main { background: url(../images/lake.png) no-repeat 50% 50%; background-size: 180%; position: relative; }
+  .wrap .contents .main { background: url(../images/lake.png) no-repeat 50% 50%; background-size: 180%; position: relative; height: 103vh; }
+
+  .wrap .contents .main .main__inner .typing-p { font-size: 60px; }
+  .wrap .contents .main .main__inner .typing-p span { font-size: 60px;  }
 
   .pr__container .pr-slogan ul li { font-size: 8em; }
 
@@ -401,7 +404,7 @@ svg .outer { stroke: #efcd2d; }
   .wrap .contents .feature__list2 li { font-size: 1.8em; }
   .wrap .contents .pr .advantages .advantages__title h4 { font-size: 3em; }
   .wrap .contents .pr .advantages .advantages__contents .advantages__list { font-size: 1.2em; }
-  .wrap .contents .pr .advantages .advantages_button .button { font-size: 1.2em; position: absolute; left: 50%; bottom: 0%; transform: translate(-50%, 0%); padding: 30px 82px; }
+  .wrap .contents .pr .advantages .advantages_button .button { font-size: 1.2em; position: absolute; left: 50%; bottom: 0%; transform: translate(-50%, -50%); padding: 30px 82px; }
 
 
 
